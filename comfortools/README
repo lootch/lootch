@@ -1,0 +1,7 @@
+A few items knocked together when the need arose:
+
+  trim(1) started off as the means to drop trailing spaces at the end of lines (back in floppy drive times, when such spaces mattered) and grew to serve to replace spaces with tabs and tabs with space according to rules I found useful. In those days COBOL was deemed practical for development on PCs and so some of those rules also covered COBOL's source code layout. I'll try to make sure the documentation for trim is posted here with the code.
+  stat(1) is somewhat Plan 9 specific and is long overdue for fixes as well as at least a token effort to port it to Posix. But it is not in great demand. A man page does exist.
+  pdate(1) looks somewhat like a normal date command, but it was built for Plan 9 where strftime(2) was deemed an evil function. The modified copy of strftime(2) built into the pdate program has a good few quirks I may be the only one to appreciate.
+  Fmt(1) (the initial is capitalised intentionally) turns long comment lines prefixed by '//\t' into paragraphs where each line has a leading prefix. It's a little rc(1) script, it begs to be ported to Posix and be enhanced to deal with different prefixes.
+  
